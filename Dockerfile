@@ -2,10 +2,12 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
+# Copy project definition and source code first
 COPY pyproject.toml .
-RUN pip install --no-cache-dir .
-
 COPY src/ ./src/
+
+# Install the application package
+RUN pip install --no-cache-dir .
 
 EXPOSE 8000
 
