@@ -1,6 +1,8 @@
 import secrets
 import string
+
 from sqlalchemy.orm import Session
+
 from url_shortener.models import URLItem
 
 CHARACTERS = string.ascii_letters + string.digits

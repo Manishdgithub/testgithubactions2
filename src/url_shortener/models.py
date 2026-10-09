@@ -1,4 +1,5 @@
 from datetime import datetime, timezone
+
 from pydantic import BaseModel, HttpUrl
 from sqlalchemy import DateTime, Integer, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
